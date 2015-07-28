@@ -1,4 +1,4 @@
-﻿namespace Constellation.Sitecore.HttpHandlers.SitemapXml
+﻿namespace Constellation.Umbraco.HttpHandlers.SitemapXml
 {
 	/// <summary>
 	/// Indicates to search engines how often a page should be indexed

@@ -1,15 +1,15 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
-{
-	using System.Configuration;
+﻿using System.Configuration;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers
+{
+    /// <summary>
 	/// The sitemap xml handler configuration.
 	/// </summary>
 	public class SitemapXmlHandlerConfiguration : ConfigurationSection
 	{
 		/* <sitemapXmlHandler
-		 *		crawlerType="Constellation.Sitecore.HttpHandlers.SitemapXml.DefaultCrawler, Constellation.Sitecore.Seo"
-		 *		sitemapNodeType="Constellation.Sitecore.HttpHandlers.SitemapXml.DefaultSitemapNode, Constellation.Sitecore.Seo"
+		 *		crawlerType="Constellation.Umbraco.HttpHandlers.SitemapXml.DefaultCrawler, Constellation.Umbraco.Seo"
+		 *		sitemapNodeType="Constellation.Umbraco.HttpHandlers.SitemapXml.DefaultSitemapNode, Constellation.Umbraco.Seo"
 		 *		cacheTimeoutMinutes="45" />
 		 */
 

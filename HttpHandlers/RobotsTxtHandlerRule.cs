@@ -1,8 +1,8 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
-{
-	using System.Configuration;
+﻿using System.Configuration;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers
+{
+    /// <summary>
 	/// The robots txt handler rule.
 	/// </summary>
 	public class RobotsTxtHandlerRule : ConfigurationElement

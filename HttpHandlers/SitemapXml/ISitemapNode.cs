@@ -1,8 +1,8 @@
-﻿namespace Constellation.Sitecore.HttpHandlers.SitemapXml
-{
-	using System;
+﻿using System;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers.SitemapXml
+{
+    /// <summary>
 	/// The base contract for an object that represents a node in a sitemap.xml document.
 	/// The node object is used to evaluate a Sitecore Item.
 	/// </summary>

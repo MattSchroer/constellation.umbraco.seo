@@ -1,11 +1,10 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
+﻿using System.Web;
+using Constellation.Umbraco.HttpHandlers.SitemapXml;
+
+namespace Constellation.Umbraco.HttpHandlers
 {
-	using Constellation.Sitecore.HttpHandlers.SitemapXml;
-
-	using System.Web;
-
-	/// <summary>
-	/// Generates a sitemap.xml file for the sitecore site requested by the hostname component
+    /// <summary>
+	/// Generates a sitemap.xml file for the umbraco site requested by the hostname component
 	/// of the current request.
 	/// </summary>
 	public class SitemapXmlHandler : IHttpHandler

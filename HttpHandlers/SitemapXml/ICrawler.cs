@@ -1,9 +1,9 @@
-﻿namespace Constellation.Sitecore.HttpHandlers.SitemapXml
-{
-	using global::Sitecore.Sites;
-	using System.Xml;
+﻿using System.Xml;
+using Umbraco.Web;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers.SitemapXml
+{
+    /// <summary>
 	/// The base contract for an object that represents a crawler in a sitemap.xml document.
 	/// The crawler object is used to build the sitemap
 	/// </summary>
@@ -12,12 +12,12 @@
 		/// <summary>
 		/// The crawl.
 		/// </summary>
-		/// <param name="site">
-		/// The site.
+        /// <param name="umbracoContext">
+		/// The context.
 		/// </param>
 		/// <param name="doc">
 		/// The doc.
 		/// </param>
-		void Crawl(SiteContext site, XmlDocument doc);
+		void Crawl(UmbracoContext umbracoContext, XmlDocument doc);
 	}
 }

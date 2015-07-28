@@ -1,9 +1,9 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
-{
-	using System.Configuration;
-	using System.Diagnostics.CodeAnalysis;
+﻿using System.Configuration;
+using System.Diagnostics.CodeAnalysis;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers
+{
+    /// <summary>
 	/// The robots txt handler configuration.
 	/// </summary>
 	public class RobotsTxtHandlerConfiguration : ConfigurationSection

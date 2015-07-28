@@ -1,11 +1,10 @@
-﻿namespace Constellation.Sitecore.HttpHandlers.SitemapXml
-{
-	using global::Sitecore.Data.Items;
-	using global::Sitecore.Sites;
-	using System;
-	using System.Diagnostics.CodeAnalysis;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
+using Umbraco.Core.Models;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers.SitemapXml
+{
+    /// <summary>
 	/// Represents a candidate element for the sitemap.xml file.
 	/// </summary>
 	/// <remarks>
@@ -25,7 +24,7 @@
 		/// <summary>
 		/// Internal storage for the source Item.
 		/// </summary>
-		private readonly Item item;
+		private readonly IPublishedContent item;
 
 		/// <summary>
 		/// Internal storage for the Change Frequency.
@@ -83,15 +82,12 @@
 		/// the Item supplied.
 		/// </summary>
 		/// <param name="item">
-		/// The Sitecore Item to interrogate.
+		/// The Umbraco content to interrogate.
 		/// </param>
-		/// <param name="site">
-		/// The site.
-		/// </param>
-		protected SitemapNode(Item item, SiteContext site)
+		protected SitemapNode(IPublishedContent item)
 		{
 			this.item = item;
-			this.Site = site;
+
 		}
 		#endregion
 
@@ -107,11 +103,6 @@
 				return this.changeFrequency;
 			}
 		}
-
-		/// <summary>
-		/// Gets the site.
-		/// </summary>
-		public SiteContext Site { get; private set; }
 
 		/// <summary>
 		/// Gets a value indicating whether the page is listed in site navigation.
@@ -255,7 +246,7 @@
 		/// </summary>
 		/// <param name="item">The Item to convert.</param>
 		/// <returns>An instance of T.</returns>
-		protected abstract T Convert(Item item);
+		protected abstract T Convert(IPublishedContent item);
 		#endregion
 
 		#region Private Methods

@@ -6,7 +6,7 @@
 	<title>$title$</title>
 	<authors>Richard J. Cabral, Matt Schroer</authors>
 	<owners>Richard J. Cabral</owners>
-	<projectUrl>https://github.com/sitecorerick/constellation.umbraco.seo</projectUrl>
+	<projectUrl>https://github.com/mattschroer/constellation.umbraco.seo</projectUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<summary>A number of SEO-specific modules for Umbraco.</summary>
 	<description>

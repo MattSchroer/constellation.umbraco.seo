@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Constellation.Sitecore.Seo")]
-[assembly: AssemblyDescription("A series of Search Engine Optimization tools for Sitecore")]
+[assembly: AssemblyTitle("Constellation.Umbraco.Seo")]
+[assembly: AssemblyDescription("A series of Search Engine Optimization tools for Umbraco")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Richard J. Cabral")]
-[assembly: AssemblyProduct("Constellation.Sitecore.Seo")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyProduct("Constellation.Umbraco.Seo")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,6 +33,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("3.0.*")]
 [assembly: AssemblyFileVersion("3.0.*")]
-
-/* <%@ Register TagPrefix="constellation" Namespace="Constellation.Sitecore.Renderings" Assembly="Constellation.Sitecore.Seo" %> */
-[assembly: System.Web.UI.TagPrefix("Constellation.Sitecore.Renderings", "constellation")]

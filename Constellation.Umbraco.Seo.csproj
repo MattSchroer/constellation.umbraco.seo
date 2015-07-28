@@ -7,8 +7,8 @@
     <ProjectGuid>{7FDABF66-B1CB-4BE7-B7AE-425B0C47A0EF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Constellation.Sitecore</RootNamespace>
-    <AssemblyName>Constellation.Sitecore.Seo</AssemblyName>
+    <RootNamespace>Constellation.Umbraco</RootNamespace>
+    <AssemblyName>Constellation.Umbraco.Seo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
@@ -32,12 +32,27 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Constellation.Umbraco, Version=1.0.5683.27032, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Constellation.Umbraco.1.0.5683.27032\lib\net45\Constellation.Umbraco.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
+    <Reference Include="umbraco">
+      <HintPath>..\Cumberland Farms\CumberlandFarms\CumberlandFarms\bin\umbraco.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Core">
+      <HintPath>..\Cumberland Farms\CumberlandFarms\CumberlandFarms\bin\Umbraco.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Umbraco.Web.UI">
+      <HintPath>..\Cumberland Farms\CumberlandFarms\CumberlandFarms\bin\Umbraco.Web.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HttpHandlers\RobotsTxtHandlerConfiguration.cs" />
@@ -56,16 +71,10 @@
     <Compile Include="HttpHandlers\SitemapXml\SitemapNode.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Instructions\Constellation.Html.Instructions.txt" />
     <Content Include="Instructions\Constellation.Sitecore.Instructions.txt" />
-    <Content Include="Instructions\Constellation.Web.Instructions.txt" />
-    <Content Include="Instructions\Constellation.WebForms.Instructions.txt" />
-    <Content Include="License\Constellation.Html.License.txt" />
-    <Content Include="License\Constellation.Sitecore.License.txt" />
-    <Content Include="License\Constellation.Sitecore.Seo.License.txt" />
+    <Content Include="License\Constellation.Umbraco.License.txt" />
+    <Content Include="License\Constellation.Umbraco.Seo.License.txt" />
     <Content Include="Instructions\Constellation.Sitecore.Seo.Instructions.txt" />
-    <Content Include="License\Constellation.Web.License.txt" />
-    <Content Include="License\Constellation.WebForms.License.txt" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Constellation.Umbraco.RobotsTxtHandler.config.Example">

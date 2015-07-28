@@ -1,9 +1,10 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
-{
-	using System.Text;
-	using System.Web;
+﻿using System;
+using System.Text;
+using System.Web;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers
+{
+    /// <summary>
 	/// Handles requests for robots.txt and response with a reference to the hostname-specific
 	/// sitemap.xml file.
 	/// </summary>
@@ -49,7 +50,7 @@
 			}
 
 			builder.AppendLine();
-			builder.AppendLine("Sitemap: " + context.Request.Url.GetLeftPart(System.UriPartial.Authority) + "/sitemap.xml");
+			builder.AppendLine("Sitemap: " + context.Request.Url.GetLeftPart(UriPartial.Authority) + "/sitemap.xml");
 
 			context.Response.Clear();
 			context.Response.ContentType = "text";

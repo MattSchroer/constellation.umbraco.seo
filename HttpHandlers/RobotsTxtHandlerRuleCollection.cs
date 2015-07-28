@@ -1,8 +1,8 @@
-﻿namespace Constellation.Sitecore.HttpHandlers
-{
-	using System.Configuration;
+﻿using System.Configuration;
 
-	/// <summary>
+namespace Constellation.Umbraco.HttpHandlers
+{
+    /// <summary>
 	/// The robots txt handler rule collection.
 	/// </summary>
 	[ConfigurationCollection(typeof(RobotsTxtHandlerRule), CollectionType = ConfigurationElementCollectionType.AddRemoveClearMap)]
