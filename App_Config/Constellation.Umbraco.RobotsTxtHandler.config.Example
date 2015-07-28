@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Place this section in your Web.Config
+<configSections>
+	<section name="robotsTxtHandler" type="Constellation.Umbraco.RobotsTxtHandlerConfiguration, Constellation.Umbraco.Seo"/>
+</configSections>
+
+<robotsTxtHandler configSource="App_Config\Constellation.Umbraco.RobotsTxtHandler.config" />
+
+end Web.Config section -->
+
+<robotsTxtHandler allowed="true">
+	<robotRules>
+		<add agentName="googlebot" allowed="true"/>
+	</robotRules>
+</robotsTxtHandler>
+

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+	<!-- Place this section in your Web.Config
+<configSections>
+	<section name="sitemapXmlHandler" type="Constellation.Umbraco.SitemapXmlHandlerConfiguration, Constellation.Umbraco.Seo"/>
+</configSections>
+	
+<sitemapXmlHandler configSource="App_Config\Constellation.Umbraco.SitemapXmlHandler.config" />
+end Web.Config section -->
+
+<sitemapXmlHandler
+	crawlerType="Constellation.Umbraco.HttpHandlers.SitemapXml.DefaultCrawler, Constellation.Umbraco.Seo"
+	sitemapNodeType="Constellation.Umbraco.HttpHandlers.SitemapXml.DefaultSitemapNode, Constellation.Umbraco.Seo"
+	cacheTimeoutMinutes="45" />
+
